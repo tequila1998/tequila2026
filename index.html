@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="你最像陀思妥耶夫斯基笔下的哪个人物？一份文学原型测试。" />
+  <title>你最像陀思妥耶夫斯基笔下的哪个人物？</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="site-shell">
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="返回首页"><span>Д</span> 文学性格试验</a>
+      <span class="edition">陀思妥耶夫斯基 · 人物原型</span>
+    </header>
+
+    <section id="intro" class="hero" aria-labelledby="quiz-title">
+      <p class="eyebrow">16 个抉择 · 8 种灵魂向度</p>
+      <h1 id="quiz-title">你最像陀思妥耶夫斯基<br>笔下的哪个人物？</h1>
+      <p class="lede">在罪、自由、爱与救赎之间，看看哪一种人物原型最接近你处理世界的方式。</p>
+      <div class="ornament" aria-hidden="true">✦</div>
+      <button id="start-btn" class="button button-primary">开始测试 <span>→</span></button>
+      <p class="disclaimer">这是一份文学原型趣味测试，不是经过验证的心理测量工具；结果旨在提供阅读与自我反思的线索。</p>
+    </section>
+
+    <section id="quiz" class="quiz-panel hidden" aria-live="polite">
+      <div class="progress-row">
+        <span id="progress-label">第 1 / 16 题</span>
+        <div class="progress-track" aria-hidden="true"><div id="progress-bar" class="progress-bar"></div></div>
+        <span id="progress-percent">6%</span>
+      </div>
+      <p id="question-kicker" class="eyebrow">抉择之一</p>
+      <h2 id="question-text"></h2>
+      <fieldset id="choices" class="choices"><legend class="sr-only">请选择最接近你的答案</legend></fieldset>
+      <div class="quiz-actions">
+        <button id="back-btn" class="button button-quiet" type="button">← 上一题</button>
+        <button id="next-btn" class="button button-primary" type="button" disabled>下一题 <span>→</span></button>
+      </div>
+      <p id="selection-hint" class="selection-hint">请选择一个答案</p>
+    </section>
+
+    <section id="results" class="results hidden" aria-live="polite">
+      <p class="eyebrow">你的文学人物原型</p>
+      <h2 id="result-title"></h2>
+      <p id="result-subtitle" class="result-subtitle"></p>
+      <div id="result-quote" class="quote"></div>
+      <div class="result-grid">
+        <article class="result-card primary-card">
+          <p class="card-label">主原型</p>
+          <h3 id="primary-name"></h3>
+          <p id="primary-copy"></p>
+          <p id="primary-watch" class="watch"></p>
+        </article>
+        <article class="result-card secondary-card">
+          <p class="card-label">次原型</p>
+          <h3 id="secondary-name"></h3>
+          <p id="secondary-copy"></p>
+          <p id="secondary-watch" class="watch"></p>
+        </article>
+      </div>
+      <section class="score-section" aria-labelledby="score-title">
+        <div class="score-heading"><h3 id="score-title">你的原型光谱</h3><span>不是高低之分</span></div>
+        <div id="score-bars" class="score-bars"></div>
+      </section>
+      <div class="result-note"><strong>如何读这份结果：</strong>最靠前的原型代表你较常使用的精神姿态；次原型提示它的补偿、拉扯或另一条可能的道路。人物不是标签，而是可供进入的小说视角。</div>
+      <div class="result-actions">
+        <button id="copy-btn" class="button button-primary" type="button">复制我的结果</button>
+        <button id="restart-btn" class="button button-quiet" type="button">重新测试</button>
+      </div>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+  </main>
+  <footer>以陀思妥耶夫斯基的小说人物为灵感创作 · 仅供文学阅读与自我探索</footer>
+  <script src="script.js"></script>
+</body>
+</html>
